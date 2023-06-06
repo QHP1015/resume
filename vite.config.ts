@@ -1,11 +1,15 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
-import { resolve } from 'path';
+import { resolve } from "path";
 
-const srcPath = resolve(__dirname, 'src');
+const srcPath = resolve(__dirname, "src");
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  server: {
+    host: "127.0.0.1", // 本机的局域网IP
+    port: 5173, // 端口号，一般情况下为8080
+  },
   css: {
     preprocessorOptions: {
       less: {
@@ -20,7 +24,7 @@ export default defineConfig({
   },
   resolve: {
     alias: {
-      '@/': `${srcPath}/`,
+      "@/": `${srcPath}/`,
     },
   },
 });
