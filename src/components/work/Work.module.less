@@ -1,0 +1,70 @@
+.box {
+    margin-top: 20px;
+
+    .title {
+        font-size: 22px;
+        // 字体垂直居中
+        display: flex;
+        align-items: center;
+
+        &::before {
+            content: '';
+            display: inline-block;
+            width: 10px;
+            height: 25px;
+            margin-right: 10px;
+            background-color: rgb(136, 187, 238);
+        }
+
+        &::after {
+            content: '';
+            display: inline-block;
+            width: 780px;
+            height: 25px;
+            margin-left: 10px;
+            background-color: rgb(136, 187, 238);
+        }
+    }
+
+    .content {
+        width: 897px;
+        margin-top: 20px;
+
+        .item {
+            .overview {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                font-weight: 700;
+                margin-bottom: 5px;
+
+                .time,
+                .tag {
+                    flex-grow: 1;
+                }
+
+                .name {
+                    flex-grow: 0.2;
+                }
+
+
+                .tag {
+                    text-align: right;
+                }
+
+            }
+            .info{
+                line-height: 1.5;
+            }
+            .work{
+                margin-left: 2rem;
+                line-height: 1.5;
+            }
+
+            .separator {
+                border-bottom: 1px dashed #ccc;
+                margin: 15px 0px;
+              }
+        }
+    }
+}

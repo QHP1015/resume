@@ -6,14 +6,29 @@
       "message": "151-6771-4477"
     },
     {
-      "icon": "\ue61d",
-      "title": "电话",
-      "message": "151-6771-4477"
+      "icon": "\ue624",
+      "title": "学历",
+      "message": "本科"
     },
     {
-      "icon": "\ue61d",
-      "title": "电话",
-      "message": "151-6771-4477"
+      "icon": "\ue61c",
+      "title": "邮箱",
+      "message": "2439462872@qq.com"
+    },
+    {
+      "icon": "\ue62a",
+      "title": "年龄",
+      "message": "21"
+    },
+    {
+      "icon": "\ue621",
+      "title": "现居住地",
+      "message": "嘉兴市南湖区"
+    },
+    {
+      "icon": "\ue62b",
+      "title": "性别",
+      "message": "男"
     }
   ]
 }

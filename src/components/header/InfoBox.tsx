@@ -11,8 +11,8 @@ export const InfoBox: React.FC<PropsType> = props => {
   return (
     <>
       <div className={styles.infoBox}>
-        {props.el}
-        <div>{props.title}</div>
+<div className={styles.icon}> {props.el}</div>
+        <div className={styles.title}>{props.title}：</div>
         <div>{props.message}</div>
       </div>
     </>

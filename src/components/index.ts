@@ -1,1 +1,5 @@
 export * from './header'
+export * from './skill'
+export * from './experience'
+export * from './work'
+export * from './education'

@@ -1,6 +1,7 @@
 import React from 'react'
+import styles from './Skill.module.less'
 
-type SkillPropsType  = {
+type SkillPropsType = {
     name: string;
     info: string;
     icon: string;
@@ -40,9 +41,19 @@ const skillData = [
 ]
 
 
-export const Skill = (props:SkillPropsType) => {
-  return (
-   
-    
-  )
+export const Skill = (props: SkillPropsType) => {
+    return (
+        <div className={styles.box}>
+            <div className={styles.title}>资质技能</div>
+            <div className={styles.content}>
+                {skillData.map((item, index) => (
+                    <div className={styles.item}>
+                        <div>{index + 1}、</div>
+                        <div className={styles.name}>{item.name}</div>
+                        <div className={styles.info}>{item.info}</div>
+                    </div>
+                ))}
+            </div>
+        </div>
+    )
 }
